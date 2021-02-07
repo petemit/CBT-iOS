@@ -1,0 +1,12 @@
+//
+//  Log.swift
+//  CBT
+//
+//  Created by Peter Mitchell on 2/7/21.
+//
+
+import Foundation
+
+class Log {
+    var situation: String = ""
+}

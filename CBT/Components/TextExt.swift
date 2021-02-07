@@ -14,3 +14,11 @@ extension Text {
             .font(Font.custom("Mukta-Regular", size: size))
     }
 }
+
+
+func ButtonText(_ string: String) -> some View {
+    Text(string)
+        .mukta(20)
+        .foregroundColor(.black)
+        .padding()
+}

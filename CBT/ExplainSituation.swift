@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ExplainSituation: View {
-    @State var situation: String = ""
+    @ObservedObject var logController: LogController
+    
     var body: some View {
-        
         ZStack {
             Color(colorGetter.getBackgroundColor())
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -19,14 +19,21 @@ struct ExplainSituation: View {
                     .mukta(25)
                     .foregroundColor(.white)
                     .padding()
-                TextEditor(text: $situation)
+                TextEditor(text: $logController.log.situation)
                     .frame(maxHeight: 400)
                     .cornerRadius(5.0)
                     .padding()
+                NavigationLink(
+                    destination: ExplainSituation(logController: logController)) {
+                    Text("Start New Log")
+                        .mukta(20)
+                        .foregroundColor(.black)
+                        .padding()
+                }
                 Spacer()
             }
         }
-        .navigationBarItems(leading: View)
+      
 //        NavigationLink(destination: Text("trying").navigationTitle("Page 2")) {
 //            Text("Let's talk.")
 //                .navigationBarTitle("Explain Situation", displayMode: .inline)
@@ -37,6 +44,6 @@ struct ExplainSituation: View {
 
 struct ExplainSituation_Previews: PreviewProvider {
     static var previews: some View {
-        ExplainSituation()
+        ExplainSituation(logController: LogController())
     }
 }

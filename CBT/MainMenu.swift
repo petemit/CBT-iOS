@@ -7,7 +7,16 @@
 
 import SwiftUI
 
+let title = """
+Cognitive
+Behavioral
+Therapy
+Pal
+"""
+
+
 struct MainMenu: View {
+    @ObservedObject var logController: LogController
     var body: some View {
         NavigationView {
             ZStack {
@@ -15,39 +24,16 @@ struct MainMenu: View {
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 VStack {
-                    Text("""
-Cognitive
-Behavioral
-Therapy
-Pal
-""")
+                    Text(title)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .mukta(30)
                     Spacer()
                     NavigationLink(
-                        destination: ExplainSituation()) {
-                        Text("Start New Log")
-                            .mukta(20)
-                            .foregroundColor(.black)
-                            .padding()
+                        destination: ExplainSituation(logController: logController)) {
+                        ButtonText("Start New Log")
                     }
-                    .buttonStyle(
-                        PlainButtonStyle()
-                    )
-                    .background(Color.white)
-                    .frame(height:50, alignment: .center)
-                    .cornerRadius(25.0)
-    
-                    //                Button(cornerRadius: 25.0)
-                    //                    .fill(Color.white)
-                    //                    .overlay(
-                    //
-                    //                    )
-                    //                    .frame(height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    //                    .padding()
-                    
-                    
+                    .navButtonStyle()
                     Spacer()
                 }
             }
@@ -58,6 +44,6 @@ Pal
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainMenu()
+        MainMenu(logController: LogController())
     }
 }

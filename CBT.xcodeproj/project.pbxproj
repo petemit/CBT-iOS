@@ -21,6 +21,9 @@
 		14756F7725BE59D200DE8CD4 /* Mukta-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14756F6B25BE59C800DE8CD4 /* Mukta-SemiBold.ttf */; };
 		14756F7B25BE5A5F00DE8CD4 /* TextExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14756F7A25BE5A5F00DE8CD4 /* TextExt.swift */; };
 		14756F8125BE683100DE8CD4 /* ExplainSituation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14756F8025BE683100DE8CD4 /* ExplainSituation.swift */; };
+		14F477CC25D0207300E0D549 /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F477CB25D0207300E0D549 /* LogController.swift */; };
+		14F477D025D0208400E0D549 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F477CF25D0208400E0D549 /* Log.swift */; };
+		14F477D325D0248900E0D549 /* MyNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F477D225D0248900E0D549 /* MyNavigationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		14756F7025BE59C800DE8CD4 /* Mukta-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mukta-Regular.ttf"; sourceTree = "<group>"; };
 		14756F7A25BE5A5F00DE8CD4 /* TextExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExt.swift; sourceTree = "<group>"; };
 		14756F8025BE683100DE8CD4 /* ExplainSituation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainSituation.swift; sourceTree = "<group>"; };
+		14F477CB25D0207300E0D549 /* LogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
+		14F477CF25D0208400E0D549 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		14F477D225D0248900E0D549 /* MyNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 		14756F4E25BE51FA00DE8CD4 /* CBT */ = {
 			isa = PBXGroup;
 			children = (
+				14F477CE25D0207800E0D549 /* Model */,
+				14F477CA25D0205C00E0D549 /* Controller */,
 				14756F7925BE5A4500DE8CD4 /* Components */,
 				14756F6925BE59C800DE8CD4 /* fonts */,
 				14756F5F25BE539800DE8CD4 /* Colors */,
@@ -120,8 +128,25 @@
 			isa = PBXGroup;
 			children = (
 				14756F7A25BE5A5F00DE8CD4 /* TextExt.swift */,
+				14F477D225D0248900E0D549 /* MyNavigationButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		14F477CA25D0205C00E0D549 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14F477CB25D0207300E0D549 /* LogController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		14F477CE25D0207800E0D549 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14F477CF25D0208400E0D549 /* Log.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F477CC25D0207300E0D549 /* LogController.swift in Sources */,
+				14F477D025D0208400E0D549 /* Log.swift in Sources */,
 				14756F5225BE51FA00DE8CD4 /* MainMenu.swift in Sources */,
 				14756F7B25BE5A5F00DE8CD4 /* TextExt.swift in Sources */,
 				14756F6125BE53AC00DE8CD4 /* colors.swift in Sources */,
+				14F477D325D0248900E0D549 /* MyNavigationButton.swift in Sources */,
 				14756F8125BE683100DE8CD4 /* ExplainSituation.swift in Sources */,
 				14756F5025BE51FA00DE8CD4 /* MainApp.swift in Sources */,
 			);
