@@ -22,3 +22,11 @@ func ButtonText(_ string: String) -> some View {
         .foregroundColor(.black)
         .padding()
 }
+
+func TitleText(_ string: String) -> some View {
+    Text(string)
+        .mukta(25)
+        .foregroundColor(.white)
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+}

@@ -15,29 +15,21 @@ struct ExplainSituation: View {
             Color(colorGetter.getBackgroundColor())
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
-                Text("Describe the situation that made you feel upset.")
-                    .mukta(25)
-                    .foregroundColor(.white)
-                    .padding()
+                
+                TitleText("Describe the situation that made you feel upset.")
+                   
                 TextEditor(text: $logController.log.situation)
                     .frame(maxHeight: 400)
                     .cornerRadius(5.0)
                     .padding()
                 NavigationLink(
-                    destination: ExplainSituation(logController: logController)) {
-                    Text("Start New Log")
-                        .mukta(20)
-                        .foregroundColor(.black)
-                        .padding()
+                    destination: SelectEmotions(logController: logController)) {
+                    ButtonText("Next")
                 }
+                .navButtonStyle()
                 Spacer()
             }
         }
-      
-//        NavigationLink(destination: Text("trying").navigationTitle("Page 2")) {
-//            Text("Let's talk.")
-//                .navigationBarTitle("Explain Situation", displayMode: .inline)
-//        }
         
     }
 }
