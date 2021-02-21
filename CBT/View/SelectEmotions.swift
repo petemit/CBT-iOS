@@ -22,12 +22,7 @@ struct SelectEmotions: View {
                 
                 TitleText("Pick the emotions you feel and rate their strengths from 1 to 10")
                 let situationText = logController.log.situation
-                Text("Situation: \(situationText)")
-                    .mukta(20)
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                
+                ScrollableSituation(situationText)
                 List {
                     ForEach(categories, id: \.self) { category in
                         Section(header: Text(category)) {
@@ -35,27 +30,14 @@ struct SelectEmotions: View {
                             ForEach(emotions.filter { emotion in
                                 return emotion.category == category
                             }) { emotion in
-                                EmotionRow(logController: logController, numText: "0", emotionId: emotion.id)
+                                EmotionRow(logController: logController, emotionId: emotion.id)
                             }
                         }
                     }
                 }.listStyle(GroupedListStyle())
-                //       List(emotions) { emotion in
-                
-                //            let emotionString = emotion.name
-                //                    categories.map { (category) -> T in
-                //                        Section(header: Text("test")) {
-                //
-                
-                //                        }
-                //                    }
-                
-                //   }
-                
-                
                 
                 NavigationLink(
-                    destination: ExplainSituation(logController: logController)) {
+                    destination: NegativeThoughts(logController: logController)) {
                     ButtonText("Next")
                         .padding()
                 }
@@ -65,12 +47,6 @@ struct SelectEmotions: View {
             }
         }
     }
-    
-    private func binding(for key: Int) -> Binding<Double> {
-            return .init(
-                get: { self.logController.log.selectedEmotions[key, default: 0.0] },
-                set: { self.logController.log.selectedEmotions[key] = $0 })
-        }
 }
 
 struct SelectEmotions_Previews: PreviewProvider {

@@ -16,6 +16,9 @@ Pal
 
 
 struct MainMenu: View {
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
+    
     @ObservedObject var logController: LogController
     var body: some View {
         NavigationView {
@@ -37,7 +40,7 @@ struct MainMenu: View {
                     Spacer()
                 }
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle(), condition: true )
         
     }
 }

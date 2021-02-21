@@ -30,3 +30,14 @@ func TitleText(_ string: String) -> some View {
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
 }
+
+func ScrollableSituation(_ string: String) -> some View {
+    ScrollView {
+        Text("Situation: \(string)")
+            .mukta(20)
+            .foregroundColor(.white)
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    .frame(maxWidth: .infinity, maxHeight: 150)
+}

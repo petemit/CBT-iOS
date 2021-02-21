@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		14175CFF25D03F6B00BEC918 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14175CFE25D03F6B00BEC918 /* Emotion.swift */; };
 		14175D0D25D0439100BEC918 /* EmotionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14175D0C25D0439100BEC918 /* EmotionRow.swift */; };
+		14531EC125E28865003CB719 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531EC025E28865003CB719 /* ViewExt.swift */; };
+		14531EC425E28FEA003CB719 /* NegativeThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531EC325E28FEA003CB719 /* NegativeThoughts.swift */; };
+		14531EC725E29436003CB719 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531EC625E29436003CB719 /* Thought.swift */; };
 		14756F5025BE51FA00DE8CD4 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14756F4F25BE51FA00DE8CD4 /* MainApp.swift */; };
 		14756F5225BE51FA00DE8CD4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14756F5125BE51FA00DE8CD4 /* MainMenu.swift */; };
 		14756F5425BE51FB00DE8CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14756F5325BE51FB00DE8CD4 /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		14175CFE25D03F6B00BEC918 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		14175D0C25D0439100BEC918 /* EmotionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionRow.swift; sourceTree = "<group>"; };
+		14531EC025E28865003CB719 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		14531EC325E28FEA003CB719 /* NegativeThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeThoughts.swift; sourceTree = "<group>"; };
+		14531EC625E29436003CB719 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		14756F4C25BE51FA00DE8CD4 /* CBT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14756F4F25BE51FA00DE8CD4 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		14756F5125BE51FA00DE8CD4 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 			children = (
 				14756F7A25BE5A5F00DE8CD4 /* TextExt.swift */,
 				14F477D225D0248900E0D549 /* NavigationLinkExt.swift */,
+				14531EC025E28865003CB719 /* ViewExt.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 			children = (
 				14F477CF25D0208400E0D549 /* Log.swift */,
 				14175CFE25D03F6B00BEC918 /* Emotion.swift */,
+				14531EC625E29436003CB719 /* Thought.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 				14756F8025BE683100DE8CD4 /* ExplainSituation.swift */,
 				14F477DA25D035E300E0D549 /* SelectEmotions.swift */,
 				14175D0C25D0439100BEC918 /* EmotionRow.swift */,
+				14531EC325E28FEA003CB719 /* NegativeThoughts.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,7 +254,10 @@
 				14F477CC25D0207300E0D549 /* LogController.swift in Sources */,
 				14F477D025D0208400E0D549 /* Log.swift in Sources */,
 				14175D0D25D0439100BEC918 /* EmotionRow.swift in Sources */,
+				14531EC425E28FEA003CB719 /* NegativeThoughts.swift in Sources */,
 				14F477DB25D035E300E0D549 /* SelectEmotions.swift in Sources */,
+				14531EC725E29436003CB719 /* Thought.swift in Sources */,
+				14531EC125E28865003CB719 /* ViewExt.swift in Sources */,
 				14175CFF25D03F6B00BEC918 /* Emotion.swift in Sources */,
 				14756F5225BE51FA00DE8CD4 /* MainMenu.swift in Sources */,
 				14756F7B25BE5A5F00DE8CD4 /* TextExt.swift in Sources */,

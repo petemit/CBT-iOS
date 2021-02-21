@@ -15,7 +15,12 @@ let emotions = [ Emotion(id: 1, category: "Anger", name: "Mad"),
                  Emotion(id: 7, category: "Sadness", name: "Sad"),
                  Emotion(id: 8, category: "Sadness", name: "Depression"),
                  Emotion(id: 9, category: "Sadness", name: "Down"),
-                 Emotion(id: 10, category: "Sadness", name: "Blue")
+                 Emotion(id: 10, category: "Sadness", name: "Blue"),
+                 Emotion(id: 11, category: "Despair", name: "Hopeless"),
+                 Emotion(id: 12, category: "Despair", name: "Despair"),
+                 Emotion(id: 13, category: "Shame", name: "Embarrassed"),
+                 Emotion(id: 14, category: "Shame", name: "Humiliated"),
+                 Emotion(id: 15, category: "Shame", name: "Worthless")
 ]
 
 struct Emotion: Identifiable {
