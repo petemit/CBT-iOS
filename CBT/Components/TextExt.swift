@@ -41,3 +41,5 @@ func ScrollableSituation(_ string: String) -> some View {
     }
     .frame(maxWidth: .infinity, maxHeight: 150)
 }
+
+

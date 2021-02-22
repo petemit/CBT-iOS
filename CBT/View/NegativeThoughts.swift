@@ -11,6 +11,12 @@ struct NegativeThoughts: View {
     @ObservedObject var logController: LogController
     @State var currentThought: String = ""
     
+    private func action() {
+        if (currentThought != "") {
+            logController.addNegativeThought(currentThought)
+            currentThought = ""
+        }
+    }
     var body: some View {
         ZStack {
             Color(colorGetter.getBackgroundColor())
@@ -19,22 +25,44 @@ struct NegativeThoughts: View {
                 TitleText("Enter any negative thoughts that you automatically think of when you consider the situation")
                 let situationText = logController.log.situation
                 ScrollableSituation(situationText)
+                HStack {
                 TextField("Negative Thought",
                           text: $currentThought) { isEditing in
                     //todo... do I care if I'm editing?
                 } onCommit: {
-                    logController.addNegativeThought(currentThought)
-                    currentThought = ""
-                    
+                    action()
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+                    Button(action: {
+                        action()
+                    }, label: {
+                        ButtonText("Add")
+                    })
+                    .buttonStyle(PlainButtonStyle())
+                    .background(Color.white)
+                    .frame(height:50, alignment: .center)
+                    .cornerRadius(25.0)
+                    .padding()
+                    
+                }
                 
                 
                 List {
                     ForEach(logController.log.negativeThoughts) { thought in
-                        Text(thought.thought)
+                        ThoughtRow(thought: thought)
                     }
                 }
+                .padding()
+                
+                NavigationLink(
+                    destination: SelectCognitiveDistortions(logController: logController)) {
+                    ButtonText("Next")
+                        .padding()
+                }
+                .navButtonStyle()
+                .frame(maxWidth: .infinity, alignment: .center)
+                
                 Spacer()
             }
         }

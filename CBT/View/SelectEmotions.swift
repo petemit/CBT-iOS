@@ -34,7 +34,9 @@ struct SelectEmotions: View {
                             }
                         }
                     }
-                }.listStyle(GroupedListStyle())
+                }
+                .listStyle(GroupedListStyle())
+                .padding()
                 
                 NavigationLink(
                     destination: NegativeThoughts(logController: logController)) {

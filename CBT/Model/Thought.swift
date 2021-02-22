@@ -10,8 +10,9 @@ import Foundation
 class Thought: Identifiable {
     let id = UUID()
     let thought: String
-    var beliefBefore: Int = 0
-    var beliefAfter: Int = 0
+    var beliefBefore: Double = 0
+    var beliefAfter: Double = 0
+    var cognitiveDistortion: CognitiveDistortion? = nil
     init(thought: String) {
         self.thought = thought
     }

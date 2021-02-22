@@ -35,9 +35,9 @@ struct EmotionRow: View {
                     
                     
                     Slider(value: self.binding(for: emotionId),
-                    in: 0...10,
-                    step: 1)
-                    .frame(width: 200)
+                           in: 0...10,
+                           step: 1)
+                        .frame(width: 200)
                     
                     Text(numText)
                 }
@@ -51,17 +51,18 @@ struct EmotionRow: View {
         }
     }
     private func binding(for key: Int) -> Binding<Double> {
-            return .init(
-                get: {
-                    return self.logController.log.selectedEmotions[key] ?? 0.0
-                },
-                set: {
-                    self.logController.log.selectedEmotions[key] = $0
-                    let num = self.logController.log.selectedEmotions[key] ?? 0.0
-                    numText = formatter.string(from: NSNumber(value: num)) ?? "0"
-                    
-                })
-        }
+        return .init(
+            get: {
+                let num = self.logController.log.selectedEmotions[key] ?? 0.0
+                return num
+            },
+            set: {
+                self.logController.log.selectedEmotions[key] = $0
+                let num = self.logController.log.selectedEmotions[key] ?? 0.0
+                numText = formatter.string(from: NSNumber(value: num)) ?? "0"
+                
+            })
+    }
 }
 
 struct EmotionRow_Previews: PreviewProvider {

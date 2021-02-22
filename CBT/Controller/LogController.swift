@@ -20,4 +20,10 @@ class LogController: ObservableObject {
         log.negativeThoughts.append(thought)
         objectWillChange.send()
     }
+    
+    func getThoughtFromId(_ id: UUID) -> Thought? {
+        return log.negativeThoughts.first { (thought) -> Bool in
+            thought.id == id
+        }
+    }
 }

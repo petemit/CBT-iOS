@@ -12,6 +12,11 @@
 		14531EC125E28865003CB719 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531EC025E28865003CB719 /* ViewExt.swift */; };
 		14531EC425E28FEA003CB719 /* NegativeThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531EC325E28FEA003CB719 /* NegativeThoughts.swift */; };
 		14531EC725E29436003CB719 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531EC625E29436003CB719 /* Thought.swift */; };
+		14531ECA25E2E420003CB719 /* ThoughtRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531EC925E2E420003CB719 /* ThoughtRow.swift */; };
+		14531ECD25E30E90003CB719 /* SelectCognitiveDistortions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531ECC25E30E90003CB719 /* SelectCognitiveDistortions.swift */; };
+		14531ED025E3106B003CB719 /* ThoughtAnalysisRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531ECF25E3106B003CB719 /* ThoughtAnalysisRow.swift */; };
+		14531ED325E31305003CB719 /* CognitiveDistortion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531ED225E31305003CB719 /* CognitiveDistortion.swift */; };
+		14531ED625E337E6003CB719 /* PositiveThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14531ED525E337E6003CB719 /* PositiveThoughts.swift */; };
 		14756F5025BE51FA00DE8CD4 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14756F4F25BE51FA00DE8CD4 /* MainApp.swift */; };
 		14756F5225BE51FA00DE8CD4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14756F5125BE51FA00DE8CD4 /* MainMenu.swift */; };
 		14756F5425BE51FB00DE8CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14756F5325BE51FB00DE8CD4 /* Assets.xcassets */; };
@@ -38,6 +43,11 @@
 		14531EC025E28865003CB719 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		14531EC325E28FEA003CB719 /* NegativeThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeThoughts.swift; sourceTree = "<group>"; };
 		14531EC625E29436003CB719 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		14531EC925E2E420003CB719 /* ThoughtRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtRow.swift; sourceTree = "<group>"; };
+		14531ECC25E30E90003CB719 /* SelectCognitiveDistortions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCognitiveDistortions.swift; sourceTree = "<group>"; };
+		14531ECF25E3106B003CB719 /* ThoughtAnalysisRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtAnalysisRow.swift; sourceTree = "<group>"; };
+		14531ED225E31305003CB719 /* CognitiveDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitiveDistortion.swift; sourceTree = "<group>"; };
+		14531ED525E337E6003CB719 /* PositiveThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveThoughts.swift; sourceTree = "<group>"; };
 		14756F4C25BE51FA00DE8CD4 /* CBT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14756F4F25BE51FA00DE8CD4 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		14756F5125BE51FA00DE8CD4 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
@@ -159,6 +169,7 @@
 				14F477CF25D0208400E0D549 /* Log.swift */,
 				14175CFE25D03F6B00BEC918 /* Emotion.swift */,
 				14531EC625E29436003CB719 /* Thought.swift */,
+				14531ED225E31305003CB719 /* CognitiveDistortion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +182,10 @@
 				14F477DA25D035E300E0D549 /* SelectEmotions.swift */,
 				14175D0C25D0439100BEC918 /* EmotionRow.swift */,
 				14531EC325E28FEA003CB719 /* NegativeThoughts.swift */,
+				14531EC925E2E420003CB719 /* ThoughtRow.swift */,
+				14531ECC25E30E90003CB719 /* SelectCognitiveDistortions.swift */,
+				14531ECF25E3106B003CB719 /* ThoughtAnalysisRow.swift */,
+				14531ED525E337E6003CB719 /* PositiveThoughts.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,15 +271,20 @@
 				14175D0D25D0439100BEC918 /* EmotionRow.swift in Sources */,
 				14531EC425E28FEA003CB719 /* NegativeThoughts.swift in Sources */,
 				14F477DB25D035E300E0D549 /* SelectEmotions.swift in Sources */,
+				14531ED025E3106B003CB719 /* ThoughtAnalysisRow.swift in Sources */,
 				14531EC725E29436003CB719 /* Thought.swift in Sources */,
 				14531EC125E28865003CB719 /* ViewExt.swift in Sources */,
 				14175CFF25D03F6B00BEC918 /* Emotion.swift in Sources */,
+				14531ED325E31305003CB719 /* CognitiveDistortion.swift in Sources */,
 				14756F5225BE51FA00DE8CD4 /* MainMenu.swift in Sources */,
+				14531ED625E337E6003CB719 /* PositiveThoughts.swift in Sources */,
 				14756F7B25BE5A5F00DE8CD4 /* TextExt.swift in Sources */,
+				14531ECD25E30E90003CB719 /* SelectCognitiveDistortions.swift in Sources */,
 				14756F6125BE53AC00DE8CD4 /* colors.swift in Sources */,
 				14F477D325D0248900E0D549 /* NavigationLinkExt.swift in Sources */,
 				14756F8125BE683100DE8CD4 /* ExplainSituation.swift in Sources */,
 				14756F5025BE51FA00DE8CD4 /* MainApp.swift in Sources */,
+				14531ECA25E2E420003CB719 /* ThoughtRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
