@@ -31,6 +31,7 @@
 		14756F7725BE59D200DE8CD4 /* Mukta-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14756F6B25BE59C800DE8CD4 /* Mukta-SemiBold.ttf */; };
 		14756F7B25BE5A5F00DE8CD4 /* TextExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14756F7A25BE5A5F00DE8CD4 /* TextExt.swift */; };
 		14756F8125BE683100DE8CD4 /* ExplainSituation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14756F8025BE683100DE8CD4 /* ExplainSituation.swift */; };
+		14B7CC6125EC16E600FA805E /* ThoughtAfterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B7CC6025EC16E600FA805E /* ThoughtAfterRow.swift */; };
 		14F477CC25D0207300E0D549 /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F477CB25D0207300E0D549 /* LogController.swift */; };
 		14F477D025D0208400E0D549 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F477CF25D0208400E0D549 /* Log.swift */; };
 		14F477D325D0248900E0D549 /* NavigationLinkExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F477D225D0248900E0D549 /* NavigationLinkExt.swift */; };
@@ -64,6 +65,7 @@
 		14756F7025BE59C800DE8CD4 /* Mukta-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mukta-Regular.ttf"; sourceTree = "<group>"; };
 		14756F7A25BE5A5F00DE8CD4 /* TextExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExt.swift; sourceTree = "<group>"; };
 		14756F8025BE683100DE8CD4 /* ExplainSituation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainSituation.swift; sourceTree = "<group>"; };
+		14B7CC6025EC16E600FA805E /* ThoughtAfterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtAfterRow.swift; sourceTree = "<group>"; };
 		14F477CB25D0207300E0D549 /* LogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
 		14F477CF25D0208400E0D549 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		14F477D225D0248900E0D549 /* NavigationLinkExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkExt.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				14531ECC25E30E90003CB719 /* SelectCognitiveDistortions.swift */,
 				14531ECF25E3106B003CB719 /* ThoughtAnalysisRow.swift */,
 				14531ED525E337E6003CB719 /* PositiveThoughts.swift */,
+				14B7CC6025EC16E600FA805E /* ThoughtAfterRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				14175D0D25D0439100BEC918 /* EmotionRow.swift in Sources */,
 				14531EC425E28FEA003CB719 /* NegativeThoughts.swift in Sources */,
 				14F477DB25D035E300E0D549 /* SelectEmotions.swift in Sources */,
+				14B7CC6125EC16E600FA805E /* ThoughtAfterRow.swift in Sources */,
 				14531ED025E3106B003CB719 /* ThoughtAnalysisRow.swift in Sources */,
 				14531EC725E29436003CB719 /* Thought.swift in Sources */,
 				14531EC125E28865003CB719 /* ViewExt.swift in Sources */,

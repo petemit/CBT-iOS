@@ -15,7 +15,7 @@ struct PositiveThoughts: View {
             Color(colorGetter.getBackgroundColor())
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack(alignment: .leading) {
-                TitleText("What Are Positive Thoughts That Most Directly and Logically ?")
+                TitleText("What are some logical, positive, and reasonable thoughts that compete directly with your negative thoughts?")
                 Spacer()
             }
             
@@ -27,8 +27,8 @@ struct PositiveThoughts_Previews: PreviewProvider {
     static func createExampleLog() -> LogController {
         let exampleLog = Log()
         exampleLog.situation = "A tuff situation"
-        exampleLog.negativeThoughts.append(Thought(thought: "dang"))
-        exampleLog.negativeThoughts[0].cognitiveDistortion = cds[0]
+        exampleLog.thoughts.append(Thought(thought: "dang"))
+        exampleLog.thoughts[0].cognitiveDistortion = cds[0]
         let example = LogController()
         example.log = exampleLog
         return example

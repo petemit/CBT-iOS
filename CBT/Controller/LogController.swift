@@ -17,12 +17,12 @@ class LogController: ObservableObject {
     
     func addNegativeThought(_ str: String) {
         let thought = Thought(thought: str)
-        log.negativeThoughts.append(thought)
+        log.thoughts.append(thought)
         objectWillChange.send()
     }
     
     func getThoughtFromId(_ id: UUID) -> Thought? {
-        return log.negativeThoughts.first { (thought) -> Bool in
+        return log.thoughts.first { (thought) -> Bool in
             thought.id == id
         }
     }

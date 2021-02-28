@@ -10,5 +10,5 @@ import Foundation
 class Log {
     var situation: String = ""
     var selectedEmotions: Dictionary<Int, Double> = Dictionary()
-    var negativeThoughts = Array<Thought>()
+    var thoughts = Array<Thought>()
 }

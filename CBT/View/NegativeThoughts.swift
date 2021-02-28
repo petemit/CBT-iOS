@@ -49,7 +49,7 @@ struct NegativeThoughts: View {
                 
                 
                 List {
-                    ForEach(logController.log.negativeThoughts) { thought in
+                    ForEach(logController.log.thoughts) { thought in
                         ThoughtRow(thought: thought)
                     }
                 }
@@ -72,7 +72,7 @@ struct NegativeThoughts: View {
         static func createExampleLog() -> LogController {
             let exampleLog = Log()
             exampleLog.situation = "A tuff situation"
-            exampleLog.negativeThoughts.append(Thought(thought: "dang"))
+            exampleLog.thoughts.append(Thought(thought: "dang"))
             let example = LogController()
             example.log = exampleLog
             return example

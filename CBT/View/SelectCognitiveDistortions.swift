@@ -17,8 +17,9 @@ struct SelectCognitiveDistortions: View {
             VStack(alignment: .leading) {
                 TitleText("Which Cognitive Distortion Matches That Negative Thought Most Accurately?")
                 List {
-                    ForEach(logController.log.negativeThoughts) { thought in
+                    ForEach(logController.log.thoughts) { thought in
                         ThoughtAnalysisRow(thought: thought)
+                        
                     }
                 }
                 .padding()
@@ -41,7 +42,7 @@ struct SelectCognitiveDistortions_Previews: PreviewProvider {
     static func createExampleLog() -> LogController {
         let exampleLog = Log()
         exampleLog.situation = "A tuff situation"
-        exampleLog.negativeThoughts.append(Thought(thought: "dang"))
+        exampleLog.thoughts.append(Thought(thought: "dang"))
         let example = LogController()
         example.log = exampleLog
         return example

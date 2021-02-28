@@ -13,7 +13,8 @@ struct ThoughtRow: View {
     let thought: Thought
     var body: some View {
         HStack {
-            Text("\(thought.thought)")
+            Text("\(thought.thoughtBefore)")
+                .mukta(20)
                 .padding()
 
             Spacer()

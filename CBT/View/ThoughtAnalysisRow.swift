@@ -14,7 +14,7 @@ struct ThoughtAnalysisRow: View {
         
         
         VStack {
-            Text(thought.thought)
+            Text(thought.thoughtBefore)
                 .mukta(20)
             
             Picker(selection: $selectedCd, label: Text((selectedCd == 0 ? " --- " : (cds.byId(selectedCd)?.name ?? "")
@@ -33,6 +33,7 @@ struct ThoughtAnalysisRow: View {
                     .mukta(20)
             }
         }
+        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
     }
 }
 
